@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LinguaStart - İngilizce Öğren</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>LinguaStart</h1>
+        <p>Türkçe • English • Русский</p>
+    </header>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <h2>Kategoriler</h2>
+
+            <button onclick="filterCategory('all')">
+                📚 Tüm Kelimeler
+            </button>
+
+            <button onclick="filterCategory('Selamlaşma')">
+                👋 Selamlaşma
+            </button>
+
+            <button onclick="filterCategory('Günlük Hayat')">
+                🏠 Günlük Hayat
+            </button>
+
+            <button onclick="filterCategory('Yiyecek')">
+                🍔 Yiyecek
+            </button>
+
+            <button onclick="filterCategory('Aile')">
+                👨‍👩‍👧 Aile
+            </button>
+
+            <button onclick="filterCategory('İş')">
+                💼 İş
+            </button>
+
+        </aside>
+
+        <main class="content">
+
+            <div class="top">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Kelime ara..."
+                    oninput="searchWords()"
+                >
+
+                <select id="level" onchange="filterLevel()">
+                    <option value="all">Tüm Seviyeler</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select>
+
+            </div>
+
+            <div id="wordContainer" class="word-container"></div>
+
+        </main>
+
+    </div>
+
+    <script src="data/words.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

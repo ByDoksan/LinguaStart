@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.header {
+    background: #2563eb;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+}
+
+.header p {
+    margin-top: 8px;
+}
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+.sidebar {
+    width: 240px;
+    background: white;
+    padding: 25px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #f1f5f9;
+    cursor: pointer;
+    text-align: left;
+    font-size: 15px;
+}
+
+.sidebar button:hover {
+    background: #dbeafe;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.top {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.top input,
+.top select {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.top input {
+    flex: 1;
+}
+
+.word-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 20px;
+}
+
+.word-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.level {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.word-card h2 {
+    margin-bottom: 5px;
+}
+
+.english {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.pronunciation {
+    color: #777;
+    margin: 5px 0 15px;
+}
+
+.language {
+    margin-top: 12px;
+}
+
+.example {
+    margin-top: 18px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.speak-btn {
+    margin-top: 15px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+}
