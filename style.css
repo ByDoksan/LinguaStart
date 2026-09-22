@@ -152,5 +152,241 @@ body {
     .top {
         flex-direction: column;
     }
+/* ========================================
+   KELİME KARTI
+======================================== */
 
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+
+.category {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* ========================================
+   DİL BÖLÜMLERİ
+======================================== */
+
+.word-section {
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+
+.language-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.main-word {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+.pronunciation {
+    color: #64748b;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+/* TÜRKÇE */
+
+.turkish-section {
+    background: #f0fdf4;
+}
+
+
+.turkish-word {
+    color: #16a34a;
+}
+
+
+/* İNGİLİZCE */
+
+.english-section {
+    background: #eff6ff;
+}
+
+
+.english-word {
+    color: #2563eb;
+}
+
+
+/* RUSÇA */
+
+.russian-section {
+    background: #faf5ff;
+}
+
+
+.russian-word {
+    color: #7c3aed;
+}
+
+
+
+/* ========================================
+   SES BUTONLARI
+======================================== */
+
+.speak-btn {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+
+.speak-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+.turkish-btn {
+    background: #16a34a;
+}
+
+
+.english-btn {
+    background: #2563eb;
+}
+
+
+.russian-btn {
+    background: #7c3aed;
+}
+
+
+
+/* ========================================
+   ÖRNEKLER
+======================================== */
+
+.examples {
+    margin-top: 20px;
+}
+
+
+.examples h3 {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+
+.example {
+    padding: 13px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.example-language {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+.example p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* İngilizce örnek */
+
+.example-english {
+    background: #eff6ff;
+}
+
+
+/* Türkçe örnek */
+
+.example-turkish {
+    background: #f0fdf4;
+}
+
+
+/* Rusça örnek */
+
+.example-russian {
+    background: #faf5ff;
+}
+
+
+
+/* ========================================
+   ÖRNEK CÜMLE SES BUTONLARI
+======================================== */
+
+.example-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+.english-example-btn {
+    background: #2563eb;
+}
+
+
+.turkish-example-btn {
+    background: #16a34a;
+}
+
+
+.russian-example-btn {
+    background: #7c3aed;
+}
+
+
+.example-btn:hover {
+    opacity: 0.85;
+}
+
+
+
+/* ========================================
+   KELİME BULUNAMADI
+======================================== */
+
+.no-result {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.no-result h2 {
+    margin-bottom: 10px;
+}
 }
